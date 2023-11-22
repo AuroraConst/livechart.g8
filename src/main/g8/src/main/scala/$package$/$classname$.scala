@@ -12,7 +12,7 @@ def $classname$(): Unit =
     dom.document.getElementById("app"),
     Main.appElement()
   )
-end $name$Chart
+end $classname$
 
 object Main:
   val model = new Model
