@@ -1,6 +1,13 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-lazy val livechart = project.in(file("."))
+organization := "com.example"
+
+name := "$name$"
+
+version := "$version$"
+
+
+lazy val $name$ = project.in(file("."))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .enablePlugins(ScalablyTypedConverterExternalNpmPlugin)
   .settings(
