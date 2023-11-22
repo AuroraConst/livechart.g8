@@ -41,7 +41,7 @@ dist
 .bloop
 .bsp
 .metals/
-.scalabuild/
+.scala_build/
 /RUNNING_PID
 .settingsz
 .DS_Store
