@@ -1,4 +1,4 @@
-package $package$
+package $organization$
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 import com.raquo.laminar.api.L.{*, given}
