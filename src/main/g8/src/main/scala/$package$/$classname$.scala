@@ -7,7 +7,7 @@ import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom
 
 @main
-def $name$Chart(): Unit =
+def $classname$(): Unit =
   renderOnDomContentLoaded(
     dom.document.getElementById("app"),
     Main.appElement()
