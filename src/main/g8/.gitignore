@@ -29,6 +29,7 @@ project/project
 project/target
 target
 tmp
+.bsp/
 .history
 dist
 .idea
@@ -39,7 +40,8 @@ dist
 .project
 .bloop
 .bsp
-.metals
+.metals/
+.scalabuild/
 /RUNNING_PID
 .settingsz
 .DS_Store
