@@ -39,7 +39,6 @@ dist
 .classpath
 .project
 .bloop
-.bsp
 .metals/
 .scala_build/
 /RUNNING_PID
