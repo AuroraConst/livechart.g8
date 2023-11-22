@@ -20,9 +20,9 @@ object Main:
 
   def appElement(): Element =
     div(
-      h1("Chart"),
+       h1("Chart", img(src:= "/vite.svg")),
       renderDataTable(),
-    //   renderDataChart(),
+      renderDataChart(),
       renderDataList(),
     )
   end appElement
