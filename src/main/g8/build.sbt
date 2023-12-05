@@ -29,6 +29,12 @@ lazy val $name$ = project.in(file("."))
           ModuleSplitStyle.SmallModulesFor(List("livechart")))
     },
 
+    /*
+     *add resolver for scalatest
+     */
+    resolvers += "Artima Maven Repository" at "https://repo.artima.com/releases",
+
+
     /* Depend on the scalajs-dom library.
      * It provides static types for the browser DOM APIs.
      */

@@ -9,8 +9,8 @@ object Dependencies {
   }
   val scalatest   :     Def.Initialize[Seq[ModuleID]] = Def.setting {
     Seq(
-      "org.scalactic" %% "scalactic"  % DependencyVersions.scalatest,
-      "org.scalatest" %% "scalatest" % DependencyVersions.scalatest % "test"
+      "org.scalactic" %%% "scalactic"  % DependencyVersions.scalatest,
+      "org.scalatest" %%% "scalatest" % DependencyVersions.scalatest % "test"
     )
   }
 
