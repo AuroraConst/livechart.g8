@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-organization := "com.example"
+organization := "$organization$"
 
 name := "$name$"
 
