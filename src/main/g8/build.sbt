@@ -1,9 +1,7 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
 organization := "$organization$"
-
 name := "$name$"
-
 version := "$version$"
 
 
@@ -11,7 +9,7 @@ lazy val $name$ = project.in(file("."))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .enablePlugins(ScalablyTypedConverterExternalNpmPlugin)
   .settings(
-    scalaVersion := "3.3.0",
+    scalaVersion := DependenciesVersions.scala,
 
     // Tell Scala.js that this is an application with a main method
     scalaJSUseMainModuleInitializer := true,
