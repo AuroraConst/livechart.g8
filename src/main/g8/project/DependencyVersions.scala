@@ -1,6 +1,6 @@
 object DependencyVersions {
 
-  val scala              = "3.3.0"
+  val scala              = "3.3.1"
   val scalajsdom        = "2.4.0"
   val laminar            = "16.0.0"
   val laminext           = "0.15.0-M7"

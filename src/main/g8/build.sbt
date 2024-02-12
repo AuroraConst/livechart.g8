@@ -9,7 +9,7 @@ lazy val $name$ = project.in(file("."))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .enablePlugins(ScalablyTypedConverterExternalNpmPlugin)
   .settings(
-    scalaVersion := DependenciesVersions.scala,
+    scalaVersion := DependencyVersions.scala,
 
     // Tell Scala.js that this is an application with a main method
     scalaJSUseMainModuleInitializer := true,
