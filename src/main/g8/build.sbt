@@ -1,7 +1,7 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
 organization := "$organization$"
-name := "$name$"
+name := "$name;format="lowercase"$"
 version := "$version$"
 
 
