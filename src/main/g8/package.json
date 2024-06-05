@@ -1,5 +1,5 @@
 {
-  "name": "$name;format="lowercase"$,
+  "name": "$name;format="lowercase"$",
   "private": true,
   "version": "0.0.0",
   "type": "module",
