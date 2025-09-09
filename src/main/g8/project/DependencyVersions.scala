@@ -1,11 +1,11 @@
 object DependencyVersions {
 
-  val scala              = "3.3.3"
-  val scalajsdom        = "2.8.0"
-  val laminar            = "17.0.0"
+  val scala              = "3.7.2"
+  val scalajsdom        = "2.8.1"
+  val laminar            = "17.2.1"
   val laminext           = "0.17.0"
-  val `upickle`          = "3.3.1"
+  val `upickle`          = "4.3.0"
   val betterfiles        = "3.9.2"
-  val scalatest          = "3.2.18"
+  val scalatest          = "3.2.19"
 
 }
