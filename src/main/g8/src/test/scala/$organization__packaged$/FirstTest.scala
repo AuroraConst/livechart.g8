@@ -9,7 +9,11 @@ import matchers._
 class FirstTest extends AnyWordSpec with should.Matchers{
   "this" should {
     "work" in {
-        true should be(true)
+      info(fileutils.cwd)
+      info(fileutils.testResourcesPath)
+    
+      createFileSync(s"${fileutils.testResourcesPath}/test.txt")
+      true should be(true)
     }
   }
 }

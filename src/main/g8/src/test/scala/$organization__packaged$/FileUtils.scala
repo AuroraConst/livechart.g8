@@ -19,7 +19,11 @@ private object Process extends js.Object {
   * FileReader object to read files from the file system and creates a string dsl for platorm independent paths
   */
 
-object FileUtils:
+/**
+  * FileReader object to read files from the file system and creates a string dsl for platorm independent paths
+  */
+
+object fileutils:
   def platform =  if (!js.isUndefined(global.process)) {
       global.process.platform.asInstanceOf[String]
     } else {
@@ -36,12 +40,6 @@ object FileUtils:
 
 
   def cwd = Process.cwd()
-  def testResourcePath = cwd / "src" / "test" / "resources"
-  def testAuroraFiles = testResourcePath / "aurora" //aurora files will be placed here for testing
-  def testIssueFiles = testResourcePath / "aurora" / "issues"
-  def testClinicalsFiles = testResourcePath / "aurora" / "clinicals"
-  def testOrdersFiles = testResourcePath / "aurora" / "orders"
-  def testHelloFile = testResourcePath / "hello.txt"
-  def testQUFiles = testResourcePath / "aurora" / "qu"
+  def testResourcesPath = cwd / "src" / "test" / "resources"
   
-end FileUtils
+end fileutils
