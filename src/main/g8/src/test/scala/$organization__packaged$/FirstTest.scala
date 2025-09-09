@@ -12,7 +12,7 @@ class FirstTest extends AnyWordSpec with should.Matchers{
       info(fileutils.cwd)
       info(fileutils.testResourcesPath)
     
-      createFileSync(s"\${fileutils.testResourcesPath}/test.txt")
+      fileutils.createFileSync(s"\${fileutils.testResourcesPath}/test.txt")
       true should be(true)
     }
   }

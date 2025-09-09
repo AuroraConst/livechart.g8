@@ -2,10 +2,9 @@ package $organization$
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
-import scala.util.Try
 
 import scala.scalajs.js.Dynamic.global
-
+import typings.fsExtra
 
 
 @js.native
@@ -13,11 +12,6 @@ import scala.scalajs.js.Dynamic.global
 private object Process extends js.Object {
   def cwd(): String = js.native
 }
-
-
-/**
-  * FileReader object to read files from the file system and creates a string dsl for platorm independent paths
-  */
 
 /**
   * FileReader object to read files from the file system and creates a string dsl for platorm independent paths
@@ -30,7 +24,7 @@ object fileutils:
       "unknown"
     }
   val separator = platform match {
-    case "win32" => "\\"
+    case "win32" => "\\\\"
     case _ => "/"
   }
 
@@ -41,5 +35,6 @@ object fileutils:
 
   def cwd = Process.cwd()
   def testResourcesPath = cwd / "src" / "test" / "resources"
-  
+  def createFileSync(path: String) =
+    fsExtra.mod.createFileSync(path)
 end fileutils
