@@ -40,10 +40,11 @@ lazy val $name$ = project.in(file("."))
     libraryDependencies ++= Dependencies.laminar.value,
     libraryDependencies ++= Dependencies.upickle.value,
     libraryDependencies ++= Dependencies.scalatest.value,
+    libraryDependencies +="org.scala-js" %%% "scala-js-macrotask-executor" % "1.1.1",
 
     // Tell ScalablyTyped that we manage `npm install` ourselves
     externalNpm := baseDirectory.value,
 
-    // ignore node library as it scalablytyped cannot handle this
+    // ignore node library because scalablytyped cannot handle this
     stIgnore += "node"
   )
