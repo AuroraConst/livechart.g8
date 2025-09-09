@@ -43,4 +43,7 @@ lazy val $name$ = project.in(file("."))
 
     // Tell ScalablyTyped that we manage `npm install` ourselves
     externalNpm := baseDirectory.value,
+
+    // ignore node library as it scalablytyped cannot handle this
+    stIgnore += "node"
   )
